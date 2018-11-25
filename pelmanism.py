@@ -74,12 +74,12 @@ class Player:
             self.prevItem = cell
     
     def reserveClosingProcess(self, cell):
-        #集められたということは、消す必要がないのでこの処理は虫する
+        #集められたということは、消す必要がないのでこの処理は無視する
         if cell.isGatherd: 
             return
         Cell.isVisibleTime = True
         self.targetItem        = cell
-        self.nextReservedFrame = self.frame + 45#Note:45は適当な数字
+        self.nextReservedFrame = self.frame + 45#Note:45は適当な数字。フレームを表す
 
     def updateClosingProcess(self):
         if Cell.isVisibleTime and self.frame >= self.nextReservedFrame:
