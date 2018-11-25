@@ -235,6 +235,6 @@ class App:
             self.initializeGameField()
     
     def initializeGameField(self):
-        self.gameField = GameField(3, 70, GAME_WIDTH, GAME_HEIGHT)
+        self.gameField = GameField(5, 70, GAME_WIDTH, GAME_HEIGHT)
 
 App()
